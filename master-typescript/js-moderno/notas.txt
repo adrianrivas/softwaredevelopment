@@ -1,0 +1,14 @@
+En js tenemos 3 tipos de variables
+Las var, let y las const
+
+Las var tienen un caracter global
+y puede accederse a ella desde cualquier
+lugar del script
+
+Las variables let tienen un caracter
+de bloque y solo pueden usarse en el
+bloque donde son declaradas
+
+Las variables const son variables constantes
+a las cuales no puede cambiarsele
+el valor.

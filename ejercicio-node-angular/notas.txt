@@ -1,0 +1,53 @@
+
+cygwin
+
+Simulador de la consola de Linux
+Instalamos
+git
+wget
+openSSH
+
+
+2. Node Js
+
+Framework que nos va a permitir hacer aplicaciones del lado del servidor. 
+
+Ingresamos el comando npm install -g npm para actualizar la versión de npm
+
+Utilizamos npm para instalar muchos paquetes y cosas de Javascript
+
+
+Comando npm init - Crear el paquete de node en el directorio
+
+Instalar express
+
+npm install express --save
+
+Express es el framework web más popular de Node, y es la librería subyacente para un gran número de otros frameworks web de Node populares. Proporciona mecanismos para:
+
+Escritura de manejadores de peticiones con diferentes verbos HTTP en diferentes caminos URL (rutas).
+Integración con motores de renderización de "vistas" para generar respuestas mediante la introducción de datos en plantillas.
+Establecer ajustes de aplicaciones web como qué puerto usar para conectar, y la localización de las plantillas que se utilizan para renderizar la respuesta.
+Añadir procesamiento de peticiones "middleware" adicional en cualquier punto dentro de la tubería de manejo de la petición.
+
+
+El api rest se crea para disponer de un servidor web
+
+Bodyparser recibe la ruta http y la convierte en un objeto javascript para manipularse
+ npm install body-parser --save - comando linux para instalar bodyparser
+
+Cuando se recibe una petición http se eejcuta el middleware antes de que se ejecute
+el script de node
+
+npm install -D instala una dependencia de desarrollo que no se ejecuta cuando la pagina esta en productivo.
+
+En el start del servidor se colocan todos los comandos que queremos que se ejecuten cuando arranque el servidor
+
+
+SASS 
+
+Preprocesador CSS encargado de dotar a css con capacidades de un lenguaje de programación
+
+sass --watch style.scss styles.css -- Este comando ejecuta el preprocesador sass y guarda los cambios del archivo sass ejecutado de entrada en el archivo css de salida
+
+

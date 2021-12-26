@@ -1,0 +1,56 @@
+Api rest Laravel
+Cada vez que se cambie la versión de PHP debe cambiarse la version en las variables de entorno
+de la configuracion avanzada en el panel de control en la variable Path.
+
+Activar el modulo de apache en el wamp64 rewrite module para reescribir urls
+
+Utilizar composer para descargar laravel
+
+Creamos un host virtual, un dominio propio para desarrollar más cómodo.
+Esto se hace en la carpeta conf de la carpeta apache, entrar a extra, y modificar el archivo vhost.conf
+
+Codigo para crear un dns en wamp server
+<VirtualHost *:80> puerto del servidor
+    DocumentRoot "${INSTALL_DIR}/www/master-laravel/api-rest-laravel/public" ruta a cambiar del servidor
+    ServerName api-rest-laravel.com.devel  	- nombre del nuevo dominio
+    ServerAlias www.api-rest-laravel.com.devel  - alias del servidor de dominio
+    <Directory "${INSTALL_DIR}/www/master-laravel/api-rest-laravel/public"> directorio del servidor
+        Options Indexes FollowSymLinks     
+        AllowOverride All
+        Order Deny,Allow
+        Allow from all     
+    </Directory> 
+</VirtualHost>
+
+Para crear un controlador, debo ejecutar la consola artisan de laravel con el siguiente comando
+php artisan make:controller nombreControlador
+
+Para crear un modelo, debo, debo ejecutar la consola artisan de laravel con el siguiente comando
+php artisan make:model nombreModelo
+
+Para imprimir en la plantilla blade de las view de laravel se utiliza la doble llave {{}}
+
+Abrir archivo .env para realizar la conexión a la base de datos mysql desde laravel
+
+Todas la interacción con la base de datos se realiza a través de un ORM
+
+Un ORM es un modelo de programación que permite mapear las estructuras de una base de datos relacional (SQL Server, Oracle, MySQL, etc.), en adelante RDBMS (Relational Database Management System), sobre una estructura lógica de entidades con el objeto de simplificar y acelerar el desarrollo de nuestras aplicaciones.
+
+Las estructuras de la base de datos relacional quedan vinculadas con las entidades lógicas o base de datos virtual definida en el ORM, de tal modo que las acciones CRUD (Create, Read, Update, Delete) a ejecutar sobre la base de datos física se realizan de forma indirecta por medio del ORM.
+
+Se debe comentar la linea del verifyCRF del archivo kernel de la carpeta Middleware
+
+Con el comando php artisan route:list puedo listar mis rutas creadas en el api de laravel
+
+{
+    'name':'Adrian',
+    'surname':'Landazuri',
+    'email':'adrian@adrian.com',
+    'password': 'victor'
+}
+
+Para instalar la libreria jwt debemos entrar al composer.json de laravel para añadir en las librerias esta instrucción:
+"firebase/php-jwt": "3.0.0"
+
+Luego nos vamos a la consola y en la carpeta del proyecto, ejecutamos el comando:
+composer update
