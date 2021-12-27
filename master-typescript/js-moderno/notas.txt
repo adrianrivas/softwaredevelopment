@@ -12,3 +12,7 @@ bloque donde son declaradas
 Las variables const son variables constantes
 a las cuales no puede cambiarsele
 el valor.
+
+La desestructuración me permite crear varias 
+variables simultaneamente y al mismo tiempo
+darles valor al recorrer un array o un objeto
