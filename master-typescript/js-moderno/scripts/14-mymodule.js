@@ -1,5 +1,4 @@
 
-
 function imprimirArray(datos){
     datos.forEach(elemento => {
         console.log(elemento)
@@ -8,4 +7,13 @@ function imprimirArray(datos){
     return datos;
 }
 
-export default imprimirArray;
+function saludo(nombre){
+    let saludar = "Hola: " + nombre
+
+    return saludar;
+}
+
+export default {
+    imprimirArray,
+    saludo
+};

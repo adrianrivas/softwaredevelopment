@@ -16,3 +16,13 @@ el valor.
 La desestructuración me permite crear varias 
 variables simultaneamente y al mismo tiempo
 darles valor al recorrer un array o un objeto
+
+Para correr modulos en Javascript, necesito 
+correr mi sitio en un servidor web, para ello
+descargo la extensión live server en visual
+studio code y listo.
+
+Al exportar por defecto varias funciones de otro modulo,
+debo declarar un objeto en el modulo donde las voy a utilizar
+para poder utilizar mis funciones exportadas
+
